@@ -33,6 +33,7 @@ export default function Hero() {
         {Array.from(new Array(5)).map((u, index) => {
           return (
             <div
+              key={index}
               className={`text-white h-4 w-4 rounded-full cursor-pointer ${
                 index === 0 ? "bg__primary" : "bg-gray-100"
               }`}

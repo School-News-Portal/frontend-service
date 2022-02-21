@@ -38,7 +38,13 @@ export default function Navbar() {
 
   return (
     <div className="md:px-20 flex justify-between">
-      <Image src={logo} height={4} width={100} objectFit="contain"></Image>
+      <Image
+        src={logo}
+        height={4}
+        width={100}
+        objectFit="contain"
+        alt="Logo"
+      ></Image>
       <div className="flex flex-col md:flex-row gap-2">
         {middleLinks.map((link) => {
           return (
