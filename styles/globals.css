@@ -1,6 +1,10 @@
-@tailwind base; 
-@tailwind components; 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
+
+.bg__primary {
+  background-color: #ff4141;
+}
 
 html,
 body {
