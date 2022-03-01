@@ -5,19 +5,16 @@ import { FaCalendarAlt, FaComments, FaEye } from "react-icons/fa";
 export default function Hero() {
   return (
     <div
-      className="flex flex-col gap-2 items-center justify-center relative"
+      className="flex flex-col gap-2 items-center justify-center relative pb-10"
       style={{ height: "65vh", backgroundImage: `url(${backgroundImage})` }}
     >
-      <button className="bg__primary p-3 px-12 rounded text-white">
+      <button className="bg__primary p-3 px-12 rounded text-white mb-4">
         Hi-Tech
       </button>
-      <p
-        className="text-white md:w-2/3 mx-auto text-center"
-        style={{ fontSize: 50 }}
-      >
+      <p className="text-white md:w-2/3 mx-auto text-center text-lg md:text-5xl">
         Certainty listening no behaviour existence assurance situation
       </p>
-      <div className="flex gap-6 text-white text-2xl mt-4">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-white text-base md:text-2xl mt-4">
         <p>Fredson</p>
         <p className="flex items-center gap-2">
           <FaCalendarAlt></FaCalendarAlt> Jan / 15 / 2022
