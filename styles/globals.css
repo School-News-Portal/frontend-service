@@ -6,6 +6,14 @@
   background-color: #ff4141;
 }
 
+.text__primary {
+  color: #ff4141;
+}
+
+.border__primary {
+  border-color: #ff4141;
+}
+
 html,
 body {
   padding: 0;
