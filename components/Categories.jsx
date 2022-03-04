@@ -13,7 +13,7 @@ export default function Categories() {
   ];
   return (
     <div>
-      <h1 className="text__primary border-b-2 pb-3 border__primary">
+      <h1 className="text__primary border-b-2 pb-3 border__primary font-bold">
         CATEGORIES
       </h1>
       {categories.map((category) => (

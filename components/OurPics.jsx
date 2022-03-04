@@ -35,7 +35,7 @@ export default function OurPics() {
   ];
   return (
     <div>
-      <h1 className="text__primary border-b-2 pb-3 border__primary">
+      <h1 className="text__primary border-b-2 pb-3 border__primary font-bold">
         OUR PICS
       </h1>
       {picPosts.map((pic, i) => (
@@ -60,7 +60,7 @@ export default function OurPics() {
               style={{ color: "#919192", fontSize: "0.6rem" }}
               className="flex flex-col md:flex-row gap-2 text-xs my-2 items-center"
             >
-              <p>Fredson</p>
+              <p>Author</p>
               <div className="flex items-center gap-1">
                 <FaCalendarAlt></FaCalendarAlt> <p>Jan / 15 / 2022</p>
               </div>

@@ -3,6 +3,7 @@ import PopularPosts from "./PopularPosts";
 import OurPics from "./OurPics";
 import Categories from "./Categories";
 import RandomPost from "./RandomPost";
+import Tags from "./Tags";
 
 export default function HomeSideContent() {
   return (
@@ -11,6 +12,7 @@ export default function HomeSideContent() {
       <OurPics></OurPics>
       <Categories></Categories>
       <RandomPost></RandomPost>
+      <Tags></Tags>
     </div>
   );
 }

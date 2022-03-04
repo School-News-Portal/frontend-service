@@ -39,7 +39,7 @@ export default function PopularPosts() {
   ];
   return (
     <div>
-      <h1 className="text__primary border-b-2 pb-3 border__primary">
+      <h1 className="text__primary border-b-2 pb-3 border__primary font-bold">
         POPULAR POSTS
       </h1>
       {popularPosts.map((popular, i) => (
@@ -58,7 +58,7 @@ export default function PopularPosts() {
               {popular.title}
             </h3>
             <div
-              style={{ color: "#919192", fontSize: "0.4rem" }}
+              style={{ color: "#919192", fontSize: "0.6rem" }}
               className="flex flex-col md:flex-row gap-2 text-xs my-2 items-center"
             >
               <p>Fredson</p>
