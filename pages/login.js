@@ -3,6 +3,7 @@ import React from "react";
 import loginBg from "../assets/images/loginBg.png";
 import logo from "../assets/images/logo.png";
 import { useRouter } from "next/router";
+import { FaTimes } from "react-icons/fa";
 
 export default function Login() {
   const router = useRouter();
@@ -15,7 +16,13 @@ export default function Login() {
         backgroundSize: "100% 100%",
       }}
     >
-      <div className="w-1/2">
+      <div className="w-1/3">
+        <div
+          className="border__primary border-2 rounded-full h-10 w-10 flex items-center justify-center my-4 mx-auto cursor-pointer"
+          onClick={() => router.push("/")}
+        >
+          <FaTimes class="text__primary"></FaTimes>
+        </div>
         <div className="bg-white rounded-3xl w-full flex flex-col items-center justify-center py-8">
           <Image
             src={logo}
