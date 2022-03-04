@@ -2,6 +2,7 @@ import React from "react";
 import PopularPosts from "./PopularPosts";
 import OurPics from "./OurPics";
 import Categories from "./Categories";
+import RandomPost from "./RandomPost";
 
 export default function HomeSideContent() {
   return (
@@ -9,6 +10,7 @@ export default function HomeSideContent() {
       <PopularPosts></PopularPosts>
       <OurPics></OurPics>
       <Categories></Categories>
+      <RandomPost></RandomPost>
     </div>
   );
 }
