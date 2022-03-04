@@ -11,7 +11,7 @@ export default function HomeContent() {
       <div className="w-full md:w-3/5">
         <HomePosts />
       </div>
-      <div className="w-full md:w-1/3">
+      <div className="w-full md:w-2/5">
         <HomeSideContent></HomeSideContent>
       </div>
     </div>

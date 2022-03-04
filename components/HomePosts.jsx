@@ -4,6 +4,7 @@ import React from "react";
 import news1 from "../assets/images/news1.png";
 import news2 from "../assets/images/news2.png";
 import news3 from "../assets/images/news3.png";
+import news4 from "../assets/images/news4.png";
 import { FaCalendarAlt, FaComments, FaEye } from "react-icons/fa";
 
 export default function HomePosts() {
@@ -29,6 +30,13 @@ export default function HomePosts() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       image: news3,
     },
+    {
+      id: 4,
+      title: "Lorem ipsum dolor lit sit amet consectetur adipiscing",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: news4,
+    },
   ];
   return (
     <div>
@@ -42,7 +50,7 @@ export default function HomePosts() {
             style={{
               position: "relative",
               width: "100%",
-              height: "400px",
+              height: "350px",
             }}
           >
             <Image
@@ -57,7 +65,10 @@ export default function HomePosts() {
             <button className="bg__primary p-2 px-6 rounded text-white">
               Tech
             </button>
-            <h3 className="mt-2 text-2xl" style={{ color: "#4D4F5C" }}>
+            <h3
+              className="mt-2 text-2xl text-center"
+              style={{ color: "#4D4F5C" }}
+            >
               {post.title}
             </h3>
             <div
