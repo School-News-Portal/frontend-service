@@ -2,8 +2,10 @@ import Image from "next/image";
 import React from "react";
 import loginBg from "../assets/images/loginBg.png";
 import logo from "../assets/images/logo.png";
+import { useRouter } from "next/router";
 
 export default function Login() {
+  const router = useRouter();
   return (
     <div
       className="h-screen w-screen flex items-center justify-center"
@@ -59,7 +61,10 @@ export default function Login() {
           </button>
           <div className="flex gap-2">
             <p>Don't have an account?</p>
-            <p className="text__primary underline cursor-pointer">
+            <p
+              className="text__primary underline cursor-pointer"
+              onClick={() => router.push("/register")}
+            >
               Create an account
             </p>
           </div>

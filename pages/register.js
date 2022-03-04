@@ -2,8 +2,10 @@ import Image from "next/image";
 import React from "react";
 import loginBg from "../assets/images/loginBg.png";
 import logo from "../assets/images/logo.png";
+import { useRouter } from "next/router";
 
 export default function Register() {
+  const router = useRouter();
   return (
     <div
       className="min-h-screen w-screen flex items-center justify-center"
@@ -11,7 +13,7 @@ export default function Register() {
         backgroundImage: `url(${loginBg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "100% 100%",
-        backgroundPosition: "fixed"
+        backgroundPosition: "fixed",
       }}
     >
       <div className="w-1/2">
@@ -27,7 +29,7 @@ export default function Register() {
             CREATE ACCOUNT
           </h1>
 
-          <div className="w-3/4 mb-8 mt-8">
+          <div className="w-3/4 mt-8">
             <label className="block pl-4" style={{ color: "#4D4F5C" }}>
               Name
             </label>
@@ -61,9 +63,11 @@ export default function Register() {
             ></input>
           </div>
 
-          <div className="flex justify-between w-3/4 mt-4">
-            <p>Remember Me</p>
-            <p className="text__primary underline">Forgot Password</p>
+          <div className="flex items-center gap-2 w-3/4 mt-4">
+            <input type="checkbox"></input> I accept the
+            <p className="text__primary underline font-bold ml-4">
+              Terms & Conditions
+            </p>
           </div>
 
           <button className="mt-8 mb-4 bg__primary w-3/4 rounded-full text-white p-3 px-4">
@@ -71,7 +75,12 @@ export default function Register() {
           </button>
           <div className="flex gap-2">
             <p>Already have an account?</p>
-            <p className="text__primary underline cursor-pointer">Login</p>
+            <p
+              className="text__primary underline cursor-pointer"
+              onClick={() => router.push("/login")}
+            >
+              Login
+            </p>
           </div>
         </div>
       </div>
