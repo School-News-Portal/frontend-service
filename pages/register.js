@@ -9,15 +9,16 @@ export default function Register() {
   const router = useRouter();
   return (
     <div
-      className="min-h-screen w-screen flex items-center justify-center"
+      className="min-h-screen w-screen flex items-center justify-center py-10"
       style={{
         backgroundImage: `url(${loginBg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "100% 100%",
-        backgroundPosition: "fixed",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
-      <div className="w-1/3">
+      <div className="w-full md:w-1/2 lg:w-1/3 px-1">
         <div
           className="border__primary border-2 rounded-full h-10 w-10 flex items-center justify-center my-4 mx-auto cursor-pointer"
           onClick={() => router.push("/")}
